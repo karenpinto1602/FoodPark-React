@@ -70,7 +70,7 @@ export default class Footer extends Component {
         <div className="footer-lower">
           <div className="footer-lower-image-text">Food Park</div>
           <div className="footer-lower-text">
-            © karenpinto-FoodPark@netlify.com, private lim.
+            © karenpinto-foodpark.netlify.app, private lim.
           </div>
         </div>
       </div>

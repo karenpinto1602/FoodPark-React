@@ -1,6 +1,6 @@
 .Footer {
-  margin-top: 100px;
   background: black;
+  position: relative;
 }
 
 .footer-upper {
@@ -87,10 +87,9 @@
 @media screen and (max-width: 768px) {
   .Footer {
     padding: 0 10px;
+    margin-top: 500px;
   }
-  .news-letter {
-    display: none !important;
-  }
+
   .footer-upper {
     grid-template-columns: 50% 50% !important;
   }

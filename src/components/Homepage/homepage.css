@@ -6,3 +6,75 @@
   background-position: center;
   background-size: cover;
 }
+.upper-grid {
+  width: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+.upper-grid-box {
+  margin-top: 310px;
+}
+.grid-box {
+  width: 80%;
+  height: 230px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  background-color: rgb(170, 170, 170, 0.8);
+  border-radius: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  color: black;
+}
+.grid-box button {
+  width: 80%;
+  background-color: #3767a5;
+
+  border: none;
+  margin: 5px auto;
+  padding: 5px;
+}
+.grid-box-image {
+  width: 100%;
+  height: 100%;
+  background-image: url("./images/vit-logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.grid-box-image button {
+  width: 70%;
+  margin-top: 100px;
+  padding: 5px;
+}
+.last-box {
+  width: 60%;
+  height: 75%;
+  text-align: left;
+  margin: auto;
+}
+.last-box p {
+  font-size: 40px;
+}
+.last-box li {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .upper-grid {
+    grid: none;
+  }
+  .grid-box {
+    width: 100%;
+  }
+}

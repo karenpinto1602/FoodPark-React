@@ -5,8 +5,34 @@ const getUpper = () => {
   return (
     <div className="home-upper">
       <div className="upper-grid">
-        <div className="grid-box"></div>
-        <div className="grid-box"></div>
+        <div className="upper-grid-box">
+          <div className="grid-box">
+            <p>Register for Food Park and get monthly credits of 5560.</p>
+            <button>
+              <b>Register</b>
+            </button>
+            <p style={{ fontSize: "14px" }}>
+              *Applicable to only VIT hostelers
+            </p>
+          </div>
+          <div className="grid-box">
+            <div className="grid-box-image">
+              <button>
+                <b>Login</b>
+              </button>
+            </div>
+          </div>
+          <div className="grid-box">
+            <div className="last-box">
+              <p>Caterers</p>
+              <ul>
+                <li>Shakti Mess</li>
+                <li>Darling Mess</li>
+                <li>Neelkesh Mess</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
