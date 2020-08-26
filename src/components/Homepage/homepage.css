@@ -7,13 +7,14 @@
   background-size: cover;
 }
 .upper-grid {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
+  width: 100%;
 }
 .upper-grid-box {
-  margin-top: 310px;
+  width: 80%;
+  margin: auto;
+  padding-top: 310px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
 }
 .grid-box {
   width: 80%;
@@ -71,7 +72,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .upper-grid {
+  .upper-grid-box {
     grid: none;
   }
   .grid-box {

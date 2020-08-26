@@ -102,6 +102,10 @@
 
   .footer-lower img {
     max-width: 100% !important;
+    margin: auto;
+  }
+  .footer-lower-image-text {
+    margin: auto;
   }
 
   .footer-lower-text {
