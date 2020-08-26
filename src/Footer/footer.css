@@ -1,0 +1,140 @@
+.Footer {
+  margin-top: 100px;
+  background: black;
+}
+
+/* footer upper */
+.footer-upper {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-evenly;
+  padding: 60px 150px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  color: #d5d5d5;
+}
+
+.upper-menu-container-head {
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: large;
+
+  padding-bottom: 4px;
+  color: #ffffff;
+}
+
+.upper-menu-container {
+  margin: 0px 0px;
+}
+
+.body-text {
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 13px;
+}
+
+/* footer lower */
+.footer-lower {
+  border-top: 0.5px solid #c1c1c1;
+  display: flex;
+  height: fit-content;
+  background: rgb(0, 0, 0);
+  padding: 10px 40px;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.footer-lower-image-text img {
+  height: 95px;
+  width: 452px;
+  /* height: 90px;
+    font-family: 'StatendamW00-Regular';
+    font-size: 64px;
+    line-height: 75px;    
+    color: #FFFFFF; */
+}
+
+.secure-payment-grid {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.upper-menu-container-head-secure {
+  font-family: Montserrat;
+  text-align: center;
+  font-size: large;
+  padding-bottom: 4px;
+  color: #ffffff;
+}
+.secure-payment-grid-images {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+}
+.footer-lower-image-text {
+  font-size: 40px;
+  color: white;
+  padding-left: 20px;
+}
+
+.footer-lower-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .Footer {
+    padding: 0 10px;
+  }
+  .news-letter {
+    display: none !important;
+  }
+  .footer-upper {
+    grid-template-columns: 50% 50% !important;
+  }
+
+  .footer-lower {
+    padding: 0 0 25px 0;
+    flex-direction: column !important;
+    text-align: center;
+  }
+
+  .footer-lower img {
+    max-width: 100% !important;
+  }
+
+  .footer-lower-text {
+    font-size: 12px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .upper-menu-container-main {
+    margin: 10px !important;
+
+    font-size: 12px !important;
+  }
+  .footer-upper {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-evenly;
+    padding: 30px 0px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    color: #d5d5d5;
+  }
+  .upper-menu-container:last-child {
+    margin: 10px auto !important;
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .secure-payment {
+    margin-left: 30%;
+  }
+}

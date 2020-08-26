@@ -1,0 +1,48 @@
+.header {
+  width: 100%;
+  border-bottom: 1.5px solid #eee;
+  padding-bottom: 5px;
+  position: fixed;
+  top: 0;
+}
+
+.upper {
+  font-weight: bold;
+  width: 100%;
+  font-size: 13px;
+  padding: 1.5px 26px;
+  color: white;
+  background-color: #02bae9;
+  display: flex;
+  justify-content: space-between;
+}
+.upper .right-side {
+  color: white;
+}
+.upper .right-side .item-1 a {
+  text-decoration: none;
+  color: white;
+}
+.upper .right-side .item-2 a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+}
+.lower {
+  width: 100%;
+  padding: 1.5px 26px;
+  font-weight: bold;
+  font-size: 27px;
+  display: flex;
+  justify-content: space-between;
+}
+.lower img {
+  margin-top: -8px;
+  width: 35px;
+  height: 35px;
+}
+.lower .right-side .item-1 a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
