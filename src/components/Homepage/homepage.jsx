@@ -11,9 +11,6 @@ const getUpper = () => {
     </div>
   );
 };
-const getLower = () => {
-  return <div></div>;
-};
 
 class Homepage extends Component {
   state = {};
