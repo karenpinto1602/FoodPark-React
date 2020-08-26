@@ -3,7 +3,6 @@
   background: black;
 }
 
-/* footer upper */
 .footer-upper {
   display: grid;
   grid-template-columns: auto auto auto auto auto;
@@ -34,7 +33,6 @@
   font-size: 13px;
 }
 
-/* footer lower */
 .footer-lower {
   border-top: 0.5px solid #c1c1c1;
   display: flex;
@@ -48,11 +46,11 @@
 .footer-lower-image-text img {
   height: 95px;
   width: 452px;
-  /* height: 90px;
-    font-family: 'StatendamW00-Regular';
-    font-size: 64px;
-    line-height: 75px;    
-    color: #FFFFFF; */
+
+  font-family: "StatendamW00-Regular";
+  font-size: 64px;
+  line-height: 75px;
+  color: #ffffff;
 }
 
 .secure-payment-grid {
@@ -75,7 +73,7 @@
 .footer-lower-image-text {
   font-size: 40px;
   color: white;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 .footer-lower-text {
