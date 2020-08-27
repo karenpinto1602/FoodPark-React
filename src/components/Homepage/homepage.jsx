@@ -38,13 +38,14 @@ const getUpper = () => {
   );
 };
 
-const getMenu = () => {
+const getMenu = (props) => {
   return (
     <div className="home-menu">
       <div className="menu-back">
         <div className="menu-grid">Checkout the FoodPark Menu for today!</div>
         <div className="menu-grid">
-          <button className="menu-grid-button">Menu</button>
+          <button className="menu-grid-button"> Menu </button>
+          <div></div>
         </div>
       </div>
     </div>
@@ -52,7 +53,14 @@ const getMenu = () => {
 };
 
 class Homepage extends Component {
-  state = {};
+  state = {
+    menuOpen: false,
+  };
+
+  changeMenuOpen = () => {
+    this.setState({ menuOpen: !this.state.menuOpen });
+  };
+
   render() {
     return (
       <div className="Main">

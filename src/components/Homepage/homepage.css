@@ -12,7 +12,7 @@
 .upper-grid-box {
   width: 80%;
   margin: auto;
-  padding-top: 310px;
+  padding-top: 330px;
   display: grid;
   grid-template-columns: 33% 33% 33%;
 }
@@ -104,12 +104,13 @@
 @media screen and (max-width: 768px) {
   .upper-grid-box {
     grid: none;
+    padding-top: 180px;
   }
   .grid-box {
     width: 100%;
   }
   .home-menu {
-    margin-top: 470px;
+    margin-top: 350px;
   }
   .menu-back {
     height: 180px;
