@@ -38,12 +38,26 @@ const getUpper = () => {
   );
 };
 
+const getMenu = () => {
+  return (
+    <div className="home-menu">
+      <div className="menu-back">
+        <div className="menu-grid">Checkout the FoodPark Menu for today!</div>
+        <div className="menu-grid">
+          <button className="menu-grid-button">Menu</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 class Homepage extends Component {
   state = {};
   render() {
     return (
       <div className="Main">
         <div className="home-upper">{getUpper()}</div>
+        <div className="home-menu">{getMenu()}</div>
         <div className="home-specials"></div>
       </div>
     );

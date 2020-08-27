@@ -70,6 +70,36 @@
 .last-box li {
   font-size: 20px;
 }
+.home-menu {
+  height: 170px;
+  width: 100%;
+  margin: 10px auto;
+  background-image: url("./images/menu-back.png");
+  background-repeat: repeat;
+  background-color: rgb(16, 86, 104);
+}
+.menu-back {
+  width: 100%;
+  text-align: center;
+  height: 170px;
+  background-color: rgb(2, 186, 233, 0.5);
+
+  display: grid;
+  grid-template-columns: auto auto;
+  align-content: center;
+}
+.menu-grid {
+  font-size: 35px;
+  font-weight: bold;
+}
+.menu-grid-button {
+  margin-left: -290px;
+  padding: 5px 25px;
+  font-weight: bold;
+  background-color: #3d91ff;
+  border: none;
+  border-radius: 4%;
+}
 
 @media screen and (max-width: 768px) {
   .upper-grid-box {
@@ -77,5 +107,20 @@
   }
   .grid-box {
     width: 100%;
+  }
+  .home-menu {
+    margin-top: 470px;
+  }
+  .menu-back {
+    height: 180px;
+    grid: none;
+  }
+  .menu-grid {
+    padding: 5px 0;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  .menu-grid-button {
+    margin: auto;
   }
 }

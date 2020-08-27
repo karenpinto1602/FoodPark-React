@@ -56,11 +56,6 @@ export default class Footer extends Component {
               </div>
               <img
                 className="secure-payment-grid-images"
-                src="./images/foot-row1.png"
-                alt=""
-              />
-              <img
-                className="secure-payment-grid-images"
                 src="./images/foot-row2.png"
                 alt=""
               />
