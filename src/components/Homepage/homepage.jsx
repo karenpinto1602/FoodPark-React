@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import "./homepage.css";
 
+import { Link } from "react-router-dom";
 const getUpper = () => {
   return (
     <div className="home-upper">
@@ -44,7 +45,9 @@ const getMenu = (props) => {
       <div className="menu-back">
         <div className="menu-grid">Checkout the FoodPark Menu for today!</div>
         <div className="menu-grid">
-          <button className="menu-grid-button"> Menu </button>
+          <Link to={"/menu"}>
+            <button className="menu-grid-button"> Menu </button>
+          </Link>
           <div></div>
         </div>
       </div>
@@ -52,7 +55,7 @@ const getMenu = (props) => {
   );
 };
 
-class Homepage extends Component {
+class Homepage extends React.Component {
   state = {
     menuOpen: false,
   };

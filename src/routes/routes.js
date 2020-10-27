@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+/* import React, { Component } from "react";
 import Menu from "../components/Menu/menu";
 import { Switch, Route } from "react-router-dom";
 import Homepage from "../components/Homepage/homepage";
@@ -17,3 +17,4 @@ class Routes extends Component {
 }
 
 export default Routes;
+ */
