@@ -9,24 +9,22 @@ const getUpper = () => {
         <div className="upper-grid-box">
           <div className="grid-box">
             <p>Register for Food Park and get monthly credits of 5560.</p>
-            <button>
-              <b>Register</b>
-            </button>
+            <Link to={"/register"}>
+              <button className="menu-grid-button"> Register </button>
+            </Link>
             <p style={{ fontSize: "14px" }}>
               *Applicable to only VIT hostelers
             </p>
           </div>
           <div className="grid-box">
             <div className="grid-box-image">
-              <button>
-                <b>Login</b>
-              </button>
+            
             </div>
           </div>
           <div className="grid-box">
             <div className="last-box">
               <p>Caterers</p>
-              <ul>
+              <ul className="home-ul">
                 <li>Shakti Mess</li>
                 <li>Darling Mess</li>
                 <li>Neelkesh Mess</li>

@@ -67,8 +67,11 @@
 .last-box p {
   font-size: 40px;
 }
-.last-box li {
+.home-ul {
   font-size: 20px;
+  color: black;
+  display: flex;
+  flex-direction: column;
 }
 .home-menu {
   height: 170px;

@@ -30,7 +30,7 @@ const getLower = () => {
       <span className="right-side">
         <span className="item-1">
           <a href="http://google.com" target="_blank" rel="noopener noreferrer">
-            Login
+            Register
           </a>
         </span>
         <span className="item-2">

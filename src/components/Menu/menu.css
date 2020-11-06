@@ -1,4 +1,93 @@
 .menu-body {
   width: 100%;
-  height: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-image: url("./menu-back.png");
+}
+.menu-grid {
+  width: 100%;
+}
+.menu-left-img {
+  width: 100%;
+  margin: 30px auto;
+}
+.menu-left-img img {
+  display: flex;
+  justify-content: center;
+  width: 500px;
+  margin: 0 auto;
+}
+.menu-select {
+  width: 500px;
+  height: 90px;
+  margin: -2% auto;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(252, 190, 56, 0.7);
+}
+.menu-select button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+.menu-right-img {
+  width: 700px;
+  height: 300px;
+  background-image: url("./menuright.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-right-btn {
+  width: 100%;
+}
+.menu-buttonFalse {
+  width: 100%;
+  height: 75px;
+  font-size: 32px;
+  font-weight: bold;
+  border: none;
+  background-color: rgb(169, 169, 169, 0.5);
+}
+.menu-buttonTrue {
+  width: 100%;
+  height: 75px;
+  font-size: 32px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.menu-item-grid {
+  font-size: 14px;
+}
+.menu-display-grid {
+  display: grid;
+  width: 90%;
+  padding: 3%;
+  background-color: rgb(193, 225, 253);
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+}
+.menu-button-add button {
+  width: 120px;
+  padding: -4%;
+  color: black;
+  font-weight: bold;
+  background-color: #02bae9;
+  border: #02bae9;
+  border-radius: 5%;
+}
+.menu-button-quantity button {
+  background-color: #3d91ff;
+  width: 20px;
+  border: none;
+  padding: -4%;
+  color: black;
+  font-weight: bold;
+  border: #02bae9;
+  border-radius: 5%;
 }

@@ -1,64 +1,97 @@
-/* import React, { Component } from 'react';
-import "./register.css";
-
-class register extends Component {
-    state = {  }
-    render() { 
-        return (  
-            <div className="login-body">
-                Hello regsiter page
-            </div>
-        );
-    }
-}
- 
-export default register; */
 import React, { Component } from 'react';
-import axios from 'axios';
-import DataTable from './data-table';
 import "./register.css";
+import axios from 'axios';
+import loginimg from "./loginim.png";
+import { Link } from 'react-router-dom';
 
-export default class Users extends Component {
+export default class CreateUser extends Component {
 
     constructor(props) {
-        super(props);
-        this.state = { usersCollection: [] };
+        super(props)
+
+        this.onChangeUserRegNo = this.onChangeUserRegNo.bind(this);
+        this.onChangeUserName = this.onChangeUserName.bind(this);
+        this.onChangeUserKitchen = this.onChangeUserKitchen.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+
+        this.state = {
+            Name: '',
+            RegNo: '',
+            Kitchen: '',
+            CreditBal: 5580
+        }
     }
 
-    componentDidMount() {
-        axios.get('http://localhost:4000/getLogin')
+    onChangeUserRegNo(e) {
+        this.setState({ RegNo: e.target.value });
+    }
+
+    onChangeUserName(e) {
+        this.setState({ Name: e.target.value });
+    }
+
+    onChangeUserKitchen(e) {
+        this.setState({ Kitchen: e.target.value });
+    }
+  
+    onSubmit = (e) => {
+        e.preventDefault()
+        
+        const userObject = {
+            RegNo: this.state.RegNo,
+            Name: this.state.Name,
+            Kitchen: this.state.Kitchen,
+            CreditBal: this.state.CreditBal
+        };
+       
+        axios.post('http://localhost:4001/getFoodParkstudents/create', userObject)
             .then(res => {
-                this.setState({ usersCollection: res.data });
-            })
-            .catch(function (error) {
-                console.log(error);
-            })
+                console.log(res.data)
+            }).catch(error => {
+                console.log(error)
+            });
+        
+        
+        this.setState({ RegNo: '', Name: '', Kitchen: '' })
     }
 
-    dataTable() {
-        return this.state.usersCollection.map((data, i) => {
-            return <DataTable obj={data} key={i} />;
-        });
-    }
 
     render() {
         return (
-            <div className="wrapper-users">
-                <div className="container">
-                    <table className="table table-striped table-dark">
-                        <thead className="thead-dark">
-                            <tr>
-                                <td>ID</td>
-                                <td>Name</td>
-                                <td>Email</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {this.dataTable()}
-                        </tbody>
-                    </table>
+            <div className="login-main-body">
+                <div className="login-main-login">
+                    <div className="login-main-grid">
+                        <div className="login-sub-grid">
+                            <img src={loginimg}></img>
+                        </div>
+                        <div className="login-sub-grid">
+                            
+                            <p className="login-l2">Register for FoodPark and Enjoy your Meal Everyday!</p>
+                                                        
+                            <form onSubmit={this.onSubmit} className="login-form">
+                                 <div className="login-form-group">
+                                    <input type="text" value={this.state.RegNo} onChange={this.onChangeUserRegNo} name="RegNo" placeholder="Registration Number" />
+                                </div>
+                                <div className="login-form-group">
+                                    <input type="text" value={this.state.Name} onChange={this.onChangeUserName} name="Name" placeholder="Name" />
+                                </div>
+                                <div className="login-form-group2" onChange={this.onChangeUserKitchen}>
+                                    {/* <input type="text" value={this.state.Kitchen} onChange={this.onChangeUserKitchen} name="Kitcehn" placeholder="Kitchen" /> */}
+                                    <input type="radio" value="SHAKTI" name="Kitchen" /> Shakti <span></span><span></span>
+                                    <input type="radio" value="DARLING" name="Kitchen" /> Darling <span></span><span></span>
+                                    <input type="radio" value="NEELKESH" name="Kitchen" /> Neelkesh 
+                                </div>
+                                <div className="">
+                                    <Link to={'/home'}>
+                                    <input type="submit" value="Register" className="login-submit" />
+                                    </Link>
+                                </div>
+                            </form>                            
+                        </div>
+                    </div>
                 </div>
             </div>
+            
         )
     }
 }

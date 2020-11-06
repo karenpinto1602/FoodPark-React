@@ -6,7 +6,7 @@ let login = new mongoose.Schema({
       required: "Required",
       unique: true,
     },
-    Name: {
+    Passw: {
       type: String,
     }
   }, {

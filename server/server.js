@@ -3,7 +3,9 @@ let mongoose = require('mongoose');
 let cors = require('cors');
 let bodyParser = require('body-parser');
 let database = require('./database/db');
-
+//cmd 
+//-> mongod
+//-> npm run serve
 const userRoute = require('../server/routes/user.routes')
 
 mongoose.Promise = global.Promise;

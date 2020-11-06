@@ -9,7 +9,7 @@ let orders = new mongoose.Schema({
         type: String,
       },
     OrderItem: {
-      type: Number,
+      type: [{type:String, type:String}],
     },
     OrderKitchen: {
       type: String,

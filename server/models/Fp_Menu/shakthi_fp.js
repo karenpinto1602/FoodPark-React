@@ -16,7 +16,7 @@ let Shakti_fp = new mongoose.Schema({
       type: [{type:Number, type:Number, type:Number, type:Number}]
     }
   }, {
-    collection: 'shalti_fps'
+    collection: 'shakti_fps'
 })
 
   module.exports = mongoose.model("Shakti_fp", Shakti_fp);

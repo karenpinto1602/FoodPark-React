@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.css";
 import Navbar from "./Navbar/navbar";
 import Footer from "./Footer/footer";
-//import { connect } from "react-redux";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -10,9 +9,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Homepage from "./components/Homepage/homepage";
 import Menu from "./components/Menu/menu";
 import Login from "./components/AuthPages/Login/index.jsx";
-import Register from "./components/AuthPages/Register/index"
+import Register from "./components/AuthPages/Register/index";
+import Cart from "./components/cart/index.jsx";
 
-import CreateUser from "./components/create-user.components";
 import User from "./components/user.component";
 class App extends Component {
   render() {
@@ -24,12 +23,12 @@ class App extends Component {
         <BrowserRouter>
           <div>
             <Switch>
-              <Route path="/" exact component={Homepage} />
+             <Route path="/" exact component={Login} />
+              <Route path="/home" exact component={Homepage} />
               <Route path="/menu" exact component={Menu} />
-              <Route path="/login" exact component={Login} />
               <Route path="/register" exact component={Register} />
-              <Route path="/create-user" component={CreateUser} />
               <Route path="/user" component={User} />
+              <Route path="/cart" component={Cart} />
             </Switch>
           </div>
         </BrowserRouter>
